@@ -22,9 +22,6 @@ const loader = new THREE.TextureLoader();
 ];
 
 
-//MATERIAL (material used above)
-//const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } );
-
 //MESH
 const box = new THREE.Mesh ( geometry, material );
 
@@ -68,16 +65,7 @@ scene.background = bg;
 function rot() {
   const t = document.body.getBoundingClientRect().top;
   
-  /* !!!Make a function or an if statement:   
-        if t is < or > than x: 
-          rotation.y = t * r
-        else:
-          rotation.x = t * r            */
-  
-  /*if (t > -1580) {box.rotation.y = t * 0.004
-  } else {box.rotation.z = t * 0.002}*/ 
- 
-  box.rotation.y = t * 0.004;
+    box.rotation.y = t * 0.004;
 
 }
 
@@ -86,12 +74,6 @@ document.body.onscroll = rot
 //ANIMATE
 function animate() {
   requestAnimationFrame( animate );
-  
-  //box.rotation.x += 0.005;
-
-  //box.rotation.y -= 0.004; //this one
-  
-  //box.rotation.z += 0.005;
 
   controls.update();
   
