@@ -1,0 +1,57 @@
+/* SETUP FOR THREEJS */
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+main{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(49, 1fr);
+  line-height: 1.2;
+  margin-top: 2em;
+}
+
+/* MAIN SYLES */
+body{
+  /* font-family: 'Jura', sans-serif; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 400;
+}
+
+/* TABULKA */
+th, td {
+  padding: 10px;
+  border: 2px solid #EADAD6;
+  background-color: #E4CEC8;
+}
+
+/* KARTY */
+section{
+  grid-column: 5/28;
+  background-color: #e3cdc9c8; 
+  padding: 2% 8%;
+  margin: 2% 2%;
+  min-width: 280px;
+}
+
+/* NADPISY */
+h1, h2{
+  color: #302521
+}
+
+
+
+.telefon, .dn{
+  margin: 3% 0%;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.icons a{
+  text-decoration: none;
+}
